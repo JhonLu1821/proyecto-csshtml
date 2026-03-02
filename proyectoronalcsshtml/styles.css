@@ -1,0 +1,447 @@
+
+
+.manifiesto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 40px;
+}
+
+.texto {
+  width: 60%;
+}
+
+.imagenes-manifiesto {
+  width: 35%;
+}
+
+.imagenes-manifiesto img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.hero {
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://cloudfront-us-east-1.images.arcpublishing.com/infobae/OFCWYHUWCRA2FKSVKXQXFFK74I.JPG");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.imagenes-manifiesto {
+  display: flex;          /* Las pone en fila */
+  justify-content: center; /* Las centra */
+  gap: 40px;              /* Espacio entre ellas */
+  margin-top: 100px;      /* Gran separación con la imagen de arriba */
+}
+
+.imagenes-manifiesto img {
+  width: 300px;           /* Tamaño más pequeño */
+  height: auto;
+  border-radius: 10px;    /* Opcional: bordes redondeados */
+}
+
+/* Contenedor de scroll lateral */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;   /* permite desplazar horizontalmente */
+  gap: 20px;          /* espacio entre imágenes */
+  padding-bottom: 10px;
+  scroll-behavior: smooth; /* desplazamiento suave */
+}
+
+ Quitar barra de scroll opcional */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Imágenes dentro del scroll */
+.scroll-container img {
+  width: 300px;   /* ancho de cada imagen */
+  height: 400px;  /* alto fijo */
+  object-fit: cover;  /* recorta sin deformar */
+  border-radius: 12px;
+  flex-shrink: 0; /* evita que se encojan */
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover */
+.scroll-container img:hover {
+  transform: scale(1.05);
+}
+
+.slider-wrapper {
+  padding: 40px;
+  text-align: center;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 80%; /* ancho del slider */
+}
+
+.slider img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  transition: transform 0.3s;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+}
+
+.galeria-slider {
+  padding: 40px;
+  text-align: center;
+}
+
+.scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.9);
+}
+
+.slider-manifiesto {
+  padding: 40px;
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.scroll-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.slide {
+  flex: 0 0 auto;
+}
+
+.slide img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Botones */
+.prev, .next {
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev { margin-right: 10px; }
+.next { margin-left: 10px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.9);
+}
+
+
+div {
+  text-align: center;        /* centra todos los textos dentro del div */
+  max-width: 800px;          /* opcional: limita el ancho para mejor lectura */
+  margin: 0 auto;            /* centra el div horizontalmente en la página */
+  line-height: 1.6;          /* hace que el texto sea más legible */
+  font-family: Arial, sans-serif; /* tipografía elegante y legible */
+}
+
+h3 {
+  margin-bottom: 20px;       /* espacio entre título y párrafo */
+}
+
+
+header {
+  text-align: center;       /* centra todo el texto dentro del header */
+  margin: 40px 0;           /* espacio arriba y abajo */
+  font-family: 'Arial', sans-serif; /* tipografía elegante */
+}
+
+header h1 {
+  font-size: 3rem;          /* tamaño grande para el título principal */
+  margin-bottom: 10px;      /* espacio entre h1 y h2 */
+}
+
+header h2 {
+  font-size: 1.8rem;        /* tamaño más pequeño para subtítulo */
+  font-weight: 400;         /* un poco más ligero que el h1 */
+  color: #555;              /* color más suave para el subtítulo */
+}
+
+
+
+.video-fullscreen {
+  position: relative;
+  width: 98%;
+  height: 98vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.video-fullscreen video {
+  width: 98%;
+  height: 98%;
+  object-fit: cover;
+}
+
+.productos-container img {
+  width: 200px;     /* ancho fijo */
+  height: auto;     /* mantiene proporciones */
+  margin: 10px;     /* espacio entre imágenes */
+  border-radius: 8px; /* opcional: bordes redondeados */
+  object-fit: cover;  /* rellena el tamaño sin deformar */
+}
+
+h4 {
+  text-align: center;   
+  margin-bottom: 20px;  
+  font-family: 'Arial', sans-serif; 
+  color: #333;       
+}
+
+.imagen-fondo {
+  position: relative;          /* necesario para posicionar el texto encima */
+  width: 100%;
+  height: 400px;               /* altura del banner */
+  overflow: hidden;
+}
+
+.imagen-fondo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;                /* opacidad de la imagen */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;                  /* imagen detrás */
+}
+
+.imagen-fondo .texto-encima {
+  position: relative;
+  z-index: 2;                  /* texto por encima de la imagen */
+  color: white;                /* para que contraste con la imagen */
+  text-align: center;          /* centra el texto horizontalmente */
+  top: 50%;                    /* centra verticalmente */
+  transform: translateY(-50%);
+}
+
+.imagen-fondo .texto-encima h2 {
+  font-size: 3rem;             /* tamaño grande para título */
+  margin: 0;
+}
+
+.imagen-fondo .texto-encima p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Scroll horizontal */
+.scroll-wrapper2 {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Miniaturas */
+.scroll-wrapper2 img {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Lightbox oculto por defecto */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 1000;
+}
+
+footer.footer {
+    background: #000000; 
+    color: #dddddd; 
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.social-toggle {
+    display: none;
+}
+
+
+.social-menu {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+
+.social-btn {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 10px 30px;
+  background: #ff1111;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  background: #df0000d0;
+}
+
+
+.social-links {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background: #111;
+  border-radius: 6px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  min-width: 140px;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+.social-links a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.social-links a:hover {
+  background: #222;
+}
+
+#social-toggle:checked ~ .social-links {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.social-links a i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.fa-instagram {
+  color: #ff004c;
+}
+
+.fa-github {
+  color: #fff;
+}
+
+.fa-share-nodes {
+  margin-right: 6px;
+}
+
+.social-toggle:checked + .social-btn i {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.author img {
+    transition: 0.4s ease;
+}
+
+.author img:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    transition: 0.3s;
+}
+
+.footer:hover {
+    letter-spacing: 1px;
+}
+
+.imagen p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.author-container {
+  position: relative;  /* importante para ubicar la imagen respecto a este contenedor */
+  width: 100%;
+  padding: 20px;
+}
+
+.author-image img {
+  width: 150px;       /* tamaño de la foto */
+  height: auto;
+  border-radius: 50%; /* opcional */
+  position: absolute; /* permite posicionar libremente */
+  top: 0;             /* distancia desde arriba */
+  right: 0;           /* distancia desde la derecha */
+}
